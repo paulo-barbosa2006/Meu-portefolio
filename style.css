@@ -25,36 +25,25 @@ body{
 /* Menu topo */
 
 div#menu-topo{
-    background-color: #00000044;
-    padding: 50px 300px;
+    max-width: 1200px;
+    height: 50px;
+    margin: 30px auto;
 }
 
   .logo-image{
-  float: left;
-  margin-left: 100px;
+    float: left;
 }
 
   .menu-icon {
+    padding-left: 929px;
+    display: inline-block;
     position: relative;
     bottom: 2px;
-    margin-right: 230px;
-    float: right;
     cursor: pointer;
   }
 
-  .traço1{
-    width: 35px;
-  }
-
-  .traço2{
-    width: 30px;
-  }
-
-  .traço3{
-    width: 33px;
-  }
-
   .traço1, .traço2, .traço3 {
+    width: 35px;
     height: 3px;
     background-color: white;
     border-radius: 10px;
@@ -63,8 +52,8 @@ div#menu-topo{
   }
   
   .movimento .traço1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px) ;
+    transform: rotate(-45deg) translate(-5px, 6px);
   }
   
   .movimento .traço2 {
@@ -72,14 +61,15 @@ div#menu-topo{
   }
   
   .movimento .traço3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    -webkit-transform: rotate(45deg) translate(-6px, -8px) ;
+    transform: rotate(45deg) translate(-6px, -8px) ;
   }
 
   .menu-lista{
      list-style: none;
      position: relative;
-     left: 100px;
+     left: 430px;
+     bottom: 36px;
    }
 
   .menu-lista ul{
@@ -92,5 +82,10 @@ div#menu-topo{
      text-decoration: none;
      padding-left: 30px;
    }
+
+   .menu-lista a:hover{
+    color: var(--cor-04);
+    transition: 0.5s;
+  }
 
    
