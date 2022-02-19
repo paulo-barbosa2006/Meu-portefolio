@@ -3,10 +3,16 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root{
     --fonte-corpo: 20px "open sans";
+    --cor-01: #023059;
+    --cor-02: #084F8C;
+    --cor-03: #012840;
+    --cor-04: #011826;
+    --cor-05: #144E73;
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Work+Sans:wght@600&display=swap');
 body{
@@ -19,36 +25,72 @@ body{
 /* Menu topo */
 
 div#menu-topo{
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: #00000044;
+    padding: 50px 300px;
 }
 
-div.menu-icon-container {
-    display: inline-block;
+  .logo-image{
+  float: left;
+  margin-left: 100px;
+}
+
+  .menu-icon {
+    position: relative;
+    bottom: 2px;
+    margin-right: 230px;
+    float: right;
     cursor: pointer;
   }
-  
-  .traço1, .traço2, .traço3 {
+
+  .traço1{
     width: 35px;
-    height: 5px;
-    background-color: rgb(27, 27, 27);
+  }
+
+  .traço2{
+    width: 30px;
+  }
+
+  .traço3{
+    width: 33px;
+  }
+
+  .traço1, .traço2, .traço3 {
+    height: 3px;
+    background-color: white;
     border-radius: 10px;
     margin: 6px 0;
     transition: 0.4s;
   }
   
-  /* Movimento do primeiro traço */
   .movimento .traço1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px);
   }
   
-  /* Fade out do segundo traço */
   .movimento .traço2 {
     opacity: 0;
   }
   
-  /* Movimento last bar */
   .movimento .traço3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
+
+  .menu-lista{
+     list-style: none;
+     position: relative;
+     left: 100px;
+   }
+
+  .menu-lista ul{
+     list-style: none;
+     display: inline;
+   }
+
+  .menu-lista a{
+     color: white;
+     text-decoration: none;
+     padding-left: 30px;
+   }
+
+   

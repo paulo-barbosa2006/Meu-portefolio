@@ -9,16 +9,29 @@
 </head>
 <body>
     <header>
-    </header>
-    <nav>
-        <div id="menu-topo">
-            <div class="menu-icon-container" onclick="myFunction(this)">
-                <div class="traço1"></div>
-                <div class="traço2"></div>
-                <div class="traço3"></div>
+        <nav>
+            <div id="menu-topo"> <!--Menu do topo-->
+                <div class="logo-image">
+                        <img src="img/Portefólio.webp" alt="Logotipo" height="30px">
+                </div>
+
+                <div class="menu-icon" onclick="myFunction(this)">
+                        <div class="traço1"></div>
+                        <div class="traço2"></div>
+                        <div class="traço3"></div>
+                </div>
+                
+                <div class="menu-lista">
+                    <li>
+                        <ul><a href="#Home">Home</a></ul>
+                        <ul><a href="#Projetos">Meus projetos</a></ul>
+                        <ul><a href="#Sobre mim">Sobre mim</a></ul>
+                        <ul><a href="#Blogs">Blogs</a></ul>
+                    </li>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
     </main>
     <footer></footer>
@@ -26,6 +39,6 @@
         function myFunction(x) {
           x.classList.toggle("movimento");
         }
-        </script>
+    </script>
 </body>
 </html>
