@@ -7,6 +7,7 @@
 }
 
 :root{
+    --fonte-titulo: "Work sans";
     --fonte-corpo: 20px "open sans";
     --cor-01: #023059;
     --cor-02: #084F8C;
@@ -16,9 +17,6 @@
 }
 
 body{
-    background-image: url(img/fundo-site.webp);
-    background-size: cover;
-    background-position: top center;
     font: var(--fonte-corpo);
     overflow-x: hidden;
 }
@@ -39,7 +37,7 @@ body{
 
 /* Menu topo */
 
-div#menu-topo{
+section#menu-topo{
     max-width: 1200px;
     height: 50px;
     margin: 30px auto;
@@ -60,7 +58,7 @@ div#menu-topo{
   .traço1, .traço2, .traço3 {
     width: 35px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(10, 10, 10);
     border-radius: 10px;
     margin: 6px 0;
     transition: 0.4s;
@@ -93,14 +91,18 @@ div#menu-topo{
    }
 
   .menu-lista a{
-     color: white;
+     color: black;
      text-decoration: none;
      padding-left: 30px;
    }
 
    .menu-lista a:hover{
-    color: var(--cor-04);
-    transition: 0.5s;
+    color: var(--cor-02);
+    transition: 0.4s;
   }
 
+  article{
+    color: white;
+    background-color: var(--cor-04);
+  }
    
