@@ -14,12 +14,27 @@
     --cor-04: #011826;
     --cor-05: #144E73;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Work+Sans:wght@600&display=swap');
+
 body{
     background-image: url(img/fundo-site.webp);
     background-size: cover;
     background-position: top center;
     font: var(--fonte-corpo);
+    overflow-x: hidden;
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* Menu topo */
