@@ -37,52 +37,21 @@ body{
 
 /* Menu topo */
 
-section#menu-topo{
+  section#menu-topo{
     max-width: 1200px;
+    margin: 0 100px;
     height: 50px;
-    margin: 30px auto;
-}
+    padding-top: 20px;
+    display: flex;
+  } 
 
   .logo-image{
-    float: left;
-}
-
-  .menu-icon {
-    padding-left: 929px;
-    display: inline-block;
-    position: relative;
-    bottom: 2px;
-    cursor: pointer;
-  }
-
-  .traço1, .traço2, .traço3 {
-    width: 35px;
-    height: 3px;
-    background-color: rgb(10, 10, 10);
-    border-radius: 10px;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .movimento .traço1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 6px) ;
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .movimento .traço2 {
-    opacity: 0;
-  }
-  
-  .movimento .traço3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px) ;
-    transform: rotate(45deg) translate(-6px, -8px) ;
+    flex: 50%;
   }
 
   .menu-lista{
-     list-style: none;
-     position: relative;
-     left: 430px;
-     bottom: 36px;
+    flex: 50%;
+    list-style: none;
    }
 
   .menu-lista ul{
@@ -101,8 +70,48 @@ section#menu-topo{
     transition: 0.4s;
   }
 
+  @media only screen and (max-width: 1200px){
+    .menu-lista a{
+    display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    .menu-icon{
+    position: relative;
+    bottom: 3px;
+    margin-right: -700px;
+    display: inline-block;
+    cursor: pointer;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+  .traço1, .traço2, .traço3 {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 10px;
+    margin: 6px 0;
+    transition: 0.4s;
+    }
+  }
+
+  .movimento .traço1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px) ;
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .movimento .traço2 {
+    opacity: 0;
+  }
+  
+  .movimento .traço3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px) ;
+    transform: rotate(45deg) translate(-6px, -8px) ;
+  }
+  
   article{
     color: white;
     background-color: var(--cor-04);
   }
-   
