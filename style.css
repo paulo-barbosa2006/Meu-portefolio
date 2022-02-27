@@ -230,6 +230,21 @@ body{
     transition: 0.4s;
   }
 
+  @media only screen and (max-width: 1200px){
+    div.conteudo{
+     width: 70%;
+    }  
+    .sobre-container h2{
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 760px){
+    div.conteudo{
+     width: 90%;
+    }  
+  }
+
   /* Portefolio */
 
   .portefolio-container{
@@ -306,3 +321,8 @@ body{
     display: none;
   }
   
+  /* Footer */
+
+  .footer-container{
+   
+  }
