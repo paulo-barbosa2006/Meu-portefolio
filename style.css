@@ -25,6 +25,8 @@ html{
 body{
     font: var(--fonte-corpo);
     background-color: #c8c8c8;
+
+    overflow-x: hidden;
 }
 
 /*Scrollbar*/
@@ -145,30 +147,31 @@ body{
   }
 
   @media only screen and (max-width: 1024px){
-    body{
-      overflow-x: hidden;
-    }
-
     .hamburguer{
     display: block;
     }
 
     .nav-links{
-      position: absolute;
-      background-color: var(--dark);
-      height: 98vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      width: 40%;
-      z-index: -1;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
-    }
+      --gap: 2em;
 
-    .nav-links li{
-      opacity: 0;
+      position: fixed;
+      inset: 67.4px 0 0 30%;
+
+      height: 98vh;
+      z-index: 1;
+
+      flex-direction: column;
+      padding: min(40vh, 20rem) 2em;
+
+      background-color: hsla(0, 0%, 12.94%,0.1);
+      backdrop-filter: blur(0.7rem);
+      -webkit-backdrop-filter: blur(0.7rem);
+
+      transform: translateX(100%);
+      transition: transform 350ms ease-in;
+    }
+    .nav-links[data-visible="true"]{
+      transform: translateX(0%);
     }
   }
 
@@ -294,6 +297,7 @@ body{
     margin-top: 15px;
     border-radius: 99px;
     padding: 10px 20px;
+    cursor: pointer;
     border: 1px solid var(--cor-04);
   }
 
