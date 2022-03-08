@@ -79,6 +79,10 @@ body{
     align-items: center;
    }
 
+   .nav-links li{
+     padding: 5px;
+   }
+
   .menu a{
      color: var(--light);
      text-decoration: none;
@@ -154,14 +158,14 @@ body{
     .nav-links{
       --gap: 2em;
 
-      position: fixed;
+      position: absolute;
       inset: 67.4px 0 0 30%;
 
-      height: 98vh;
+      height: 92.7vh;
       z-index: 1;
 
       flex-direction: column;
-      padding: min(40vh, 20rem) 2em;
+      padding: min(60vh, 20rem) 2em;
 
       background-color: hsla(0, 0%, 12.94%,0.1);
       backdrop-filter: blur(0.7rem);
@@ -172,6 +176,10 @@ body{
     }
     .nav-links[data-visible="true"]{
       transform: translateX(0%);
+    }
+
+    .nav-links li{
+      padding: 10px;
     }
   }
 
