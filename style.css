@@ -116,7 +116,7 @@ body{
 
     transform-origin: 0 0;
 
-    transition: 0,4s;
+    transition: 0.4s;
   }
 
   .hamburguer:hover .linha2{
@@ -127,7 +127,7 @@ body{
   }
 
   .hamburguer.nav-active .linha1 {
-    -webkit-transform: rotate(45deg) translate(1px, -2px) ;
+    -webkit-transform: rotate(45deg) translate(1px, -2px);
     transform: rotate(45deg) translate(1px, -2px);
   }
   
