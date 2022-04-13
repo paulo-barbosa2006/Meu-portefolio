@@ -14,8 +14,9 @@
                 
                 <div class="menu">
                     <ul data-visible="false" class="nav-links">
+                        <li><a href="#home" >Home</a></li>
                         <li><a href="#sobre" >Sobre mim</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
@@ -30,22 +31,23 @@
     </header>
     <main>
         <section>
-            <div id="sobre" class="sobre-container">
+            <div id="home" class="home-container">
                 <div class="conteudo">
                     <h2><span>Meu nome é</span> Paulo Barbosa</h2>
-                    <p>Tenho 15 anos e estou no 10º ano a fazer curso profissional de multimédia, estou a aprender programação, animação e edição de imagem.</p>
+                        <p>Experiência com:</p>
+                        <div id="app"></div>
                 </div>
                 <div class="button">
-                    <a href="#portfolio">Ver mais</a>
+                    <a href="#sobre">Ver mais</a>
                 </div>
             </div>
             </section>
-            <div id="portfolio" class="portfolio-container">
+            <div id="sobre" class="sobre-container">
                 <section>
                     <div class="top">
                         <h2>Minhas habilidades</h2>
                     </div>
-                    <div class="colunas">
+                    <div class="row">
                         <div class="coluna">
                             <h3>HTML5</h3>
                             <img src="img/html5.png" alt="">
@@ -73,38 +75,38 @@
                 <div class="separador">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <section>
+                <section id="projetos">
                     <div class="top">
                             <h2>Meus projetos</h2>
                         </div>
-                    <div class="colunas">
-                        <div class="coluna">
+                    <div class="row">
+                        <div class="column">
                             <h3>Madonna</h3>
                             <picture>
                                 <source media="(max-width:600px)" srcset="img/madonna.webp" width="100%">
                                 <img src="img/madonna.webp" alt="Site da madonna">
                             </picture>
-                            <div class="button-portfolio">
+                            <div class="button-projeto">
                                 <a href="https://drive.google.com/drive/folders/1rUGQzbFfGmp9yul8PwYorTMECcqH1MAI?usp=sharing" target="_blank">Ver mais</a>
                             </div>
                         </div>
-                        <div class="coluna">
+                        <div class="column">
                             <h3>Madonna</h3>
                             <picture>
                                 <source media="(max-width:600px)" srcset="img/madonna.webp" width="100%">
                                 <img src="img/madonna.webp" alt="Site da madonna">
                             </picture>
-                            <div class="button-portfolio">
+                            <div class="button-projeto">
                                 <a href="https://drive.google.com/drive/folders/1rUGQzbFfGmp9yul8PwYorTMECcqH1MAI?usp=sharing" target="_blank">Ver mais</a>
                             </div>
                         </div>
-                        <div class="coluna">
+                        <div class="column">
                             <h3>Madonna</h3>
                             <picture>
                                 <source media="(max-width:600px)" srcset="img/madonna.webp" width="100%">
                                 <img src="img/madonna.webp" alt="Site da madonna">
                             </picture>
-                            <div class="button-portfolio">
+                            <div class="button-projeto">
                                 <a href="https://drive.google.com/drive/folders/1rUGQzbFfGmp9yul8PwYorTMECcqH1MAI?usp=sharing" target="_blank">Ver mais</a>
                             </div>
                         </div>
@@ -118,21 +120,47 @@
             <div id="contato" class="footer-container">
                 <h2>Contacte-me</h2>
                 <div class="footer-separador"></div>
-                <ul class="social-media">
-                    <li><a href="https://www.instagram.com/_._paulo._/" target='_blank'><ion-icon name="logo-instagram" class="social"></ion-icon></a></li>
-                    <li><a href="#" target='_blank'><ion-icon name="logo-facebook" class="social"></ion-icon></a></li>
-                    <li><a href="#" target='_blank'></a></li>
-                </ul>
-                <p class="invicible">Isto é só para separar porque não consigo de outra maneira :)</p>
+                <div class="footer-"></div>
+                <!--
+                    <ul class="social-media">
+                        <li><a href="https://www.instagram.com/_._paulo._/" target='_blank'><ion-icon name="logo-instagram" class="social"></ion-icon></a></li>
+                        <li><a href="#" target='_blank'><ion-icon name="logo-facebook" class="social"></ion-icon></a></li>
+                        <li><a href="#" target='_blank'></a></li>
+                    </ul>
+            -->
                 <div class="contatos">
+                    <p></p>
                     <p><ion-icon name="call-outline" class="icons"></ion-icon> +351 964 586 784 </p>
                     <p><ion-icon name="mail-outline" class="icons"></ion-icon> paulodgb2006@gmail.com </p>
                 </div>
+                <div class="copyright"><p>Todos os direitos reservados &copy;</p></div>
             </div>
         </section>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+        loop: true
+        });
+
+        typewriter.typeString('Web Design')
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString('HTML')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('CSS')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('JavaScript')
+        .pauseFor(900)
+        .start();
+    </script>
 </body>
 </html>
