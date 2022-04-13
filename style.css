@@ -270,6 +270,19 @@ body{
     }  
   }
 
+  /* Sobre */
+
+  .sobre-container{
+    margin: 30px auto;
+    width: 95%;
+    max-width: 1200px;
+  }
+
+  .column-light {
+    flex: 1;
+    text-align: center;
+  }
+
   /* Projetos */
 
   .projetos-container{
