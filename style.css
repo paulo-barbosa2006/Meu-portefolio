@@ -273,7 +273,7 @@ body{
   /* Sobre */
 
   .sobre-container{
-    margin: 30px auto;
+    margin: -30px auto;
     width: 95%;
     max-width: 1200px;
   }
@@ -342,22 +342,6 @@ body{
   .button-projeto:hover{
     background-color: var(--cor-04);
     transition: 0.4s;
-  }
-
-  div.separador{
-    display: block;
-    width: 50%;
-    margin: 40px auto;
-    padding-top: 20px;
-    border-top: 2px solid var(--cor-01);
-    border-right: 2px solid var(--cor-01);
-    border-left: 2px solid var(--cor-01);
-    border-radius: 5px 5px 0 0;
-  }
-
-  .separador p{
-    margin-top: 40px;
-    display: none;
   }
   
   /* Footer */
